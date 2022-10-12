@@ -16,7 +16,7 @@ const express_1 = __importDefault(require("express"));
 var router = express_1.default.Router();
 router.get("/", (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        response.status(200).end;
+        response.send("hello").status(200).end;
     }
     catch (error) {
         response.status(400).end;

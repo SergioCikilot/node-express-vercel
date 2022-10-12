@@ -5,7 +5,7 @@ var router = express.Router();
 
 router.get("/", async (request: Request, response: Response) => {
   try {
-    response.status(200).end;
+    response.send("hello").status(200).end;
   } catch (error) {
     response.status(400).end;
   }
