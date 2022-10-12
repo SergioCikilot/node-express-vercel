@@ -1,6 +1,6 @@
 // Import packages
-const express = require("express");
-const home = require("./api/home");
+import express from "express";
+import home from "./api/home";
 
 // Middlewares
 const app = express();
